@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-1: #0a1930;
+    --bg-2: #055744;
+    --bg-3: rgba(225, 152, 164, 0.973);
+    --white: #cdd8f8;
+    --red: rgb(160, 5, 5);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    background-color: #0a1930;
+    color: var(--white);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    border: 3px solid var(--white);
+    padding: 2rem 0;
+    background-color: #055744;
+}
+
+label {
+    font-size: 1.75rem;
+    color: white;
+}
+
+input,
+button {
+    width: 80%;
+    padding: 0.75rem 2rem;
+    background-color: #13315f;
+    color: white;
+    font-size: 1.5rem;
+    border-color: var(--white)
+}
+
+#output {
+    border: 3px solid white;
+    width: 80%;
+    max-width: 600px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    background-color: var(--bg-2);
+
+    display: none;
+    /* background-color: var(--bg-3);
+    border-color: var(--red);
+    color: var(--red); */
+}
+
+#result {
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
